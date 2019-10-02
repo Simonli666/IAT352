@@ -43,7 +43,7 @@
 
     <section>
       <div class="container">
-        <a href="">  <h1>Top Rate Collection</h1><img src="top"></a>
+        <a href="">  <h1>Top Rate Collection</h1><img src="./img/ph.jpg"></a>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
       </div>
     </section>
@@ -53,42 +53,42 @@
     <section>
       <div class="container">
         <div>
-          <a href="">  <h3>Comedy</h3><img src="Comedy"></a>
+          <a href="">  <h3>Comedy</h3><img src="./img/ph.jpg"></a>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
         </div>
 
         <div>
-          <a href="">  <h3>Horror</h3><img src="./img/logo_css.png"></a>
+          <a href="">  <h3>Horror</h3><img src="./img/ph.jpg"></a>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
         </div>
 
         <div>
-          <a href="">  <h3>Romance</h3>  <img src="./img/logo_css.png"></a>
+          <a href="">  <h3>Romance</h3>  <img src="./img/ph.jpg"></a>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
         </div>
 
         <div >
-            <a href="">  <h3>Drama</h3>  <img src="dd"></a>
+            <a href="">  <h3>Drama</h3>  <img src="./img/ph.jpg"></a>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
         </div>
 
         <div>
-          <a href="">  <h3>Fiction</h3>  <img src="ddd"></a>
+          <a href="">  <h3>Fiction</h3>  <img src="./img/ph.jpg"></a>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
         </div>
 
         <div>
-          <a href="">  <h3>Action</h3>  <img src="ddd"></a>
+          <a href="">  <h3>Action</h3>  <img src="./img/ph.jpg"></a>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
         </div>
 
         <div>
-          <a href="">  <h3>Documentary</h3>  <img src="ddd"></a>
+          <a href="">  <h3>Documentary</h3>  <img src="./img/ph.jpg"></a>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
         </div>
 
         <div>
-            <a href="">  <h3>Advanture</h3>  <img src="ddd"></a>
+            <a href="">  <h3>Advanture</h3>  <img src="./img/ph.jpg"></a>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p></br>
         </div>
 
