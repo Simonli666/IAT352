@@ -17,7 +17,7 @@
       })
     </script>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="filter/css/style.css">
   </head>
 
   <body>
