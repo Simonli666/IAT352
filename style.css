@@ -10,9 +10,9 @@ body
 .sidebar
 {
   position: fixed;
-  top: 0;
+  top: 70px;
   left: -250px;
-  background: #262626;
+  background: #696969;
   width: 250px;
   height: 100%;
   transition: .3s;
@@ -23,18 +23,18 @@ body
   left: 0px;
 }
 
-ul
+.sidebar ul
 {
   margin: 0;
   padding: 20px 0;
 }
 
-ul li
+.sidebar ul li
 {
   list-style: none;
 }
 
-ul li a
+.sidebar ul li a
 {
   padding: 10px 20px;
   color: #fff;
@@ -43,10 +43,14 @@ ul li a
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-ul li a:hover{
-  color:#cccccc;
+
+
+.sidebar ul li a:hover{
+  color:#8890C6;
   font-weight:bold;
 }
+
+
 
 .sidebarBtn
 {
@@ -118,60 +122,110 @@ ul li a:hover{
 }
 
 
+
+
 /* header */
-
-.container{
-  width:80%;
-  margin:auto;
-  overflow:hidden;
+ nav
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: black;
+  padding: 0 100px;
+  box-sizing: border-box;
 }
 
-header{
-  background:#35424a;
-  color:#ffffff;
-  padding-top:30px;
-  min-height:70px;
-  border-bottom:#e8491d 3px solid;
+ nav .brand{
+  float: left;
+  height: 100%;
+  line-height: 70px;
 }
 
-header a{
-  color:#ffffff;
-  text-decoration:none;
+nav .brand h2
+{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+nav  ul{
+  float: right;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav  li{
+  list-style: none;
+}
+
+nav ul li a
+{
+  position: relative;
+  display:block;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
   text-transform: uppercase;
-  font-size:16px;
+  transition: .5s;
 }
 
-header li{
-  float:left;
-  display:inline;
-  padding: 0 20px 0 20px;
+nav ul li a:hover{
+  color: #262626;
 }
 
-header form{
-  float:left;
-  display:inline;
-  padding: 0 20px 0 20px;
+nav ul li a:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform-origin: right;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: transform .5s;
 }
 
-header #branding{
-  float:left;
+nav ul li a:hover::before{
+  transform-origin: left;
+  transform: scaleX(1);
+
 }
 
-header #branding h1{
-  margin:0;
+nav form{
+  margin-left: 10px;
+  height: 70px;
+  line-height: 70px;
 }
 
-header nav{
-  float:right;
-  margin-top:10px;
+nav form:hover{
+  color: #262626;
 }
 
-header .highlight, header .current a{
-  color:#e8491d;
-  font-weight:bold;
+.topCol {
+  margin-top: 150px;
 }
 
-header a:hover{
-  color:#cccccc;
-  font-weight:bold;
+.topCol h2{
+  justify-content: center;
+   text-align: center;
+}
+
+.topCol img{
+  margin-left: auto;
+ margin-right: auto;
+ display: block;
+}
+
+.topCol p{
+  margin-left: 100px;
 }
