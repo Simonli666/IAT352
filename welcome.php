@@ -1,10 +1,5 @@
 
-<?php
-	$info = file('member.txt');
 
-
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,12 +19,13 @@
 
 <div class="container">
 
-
-
+		<div class="col-md-12" align="center">
  
- <h1>WELCOME , OUR NEW MEMBER!</h1>
- <p> Enjoy your membership excluted functions.</p>
- <a href="landingPage.php" class="btn btn-primary btn-lg active" role="button">Start Exploring!</a>
+		 <h1>WELCOME , OUR NEW MEMBER!</h1>  <br> 
+		 <p> Enjoy your membership excluted functions.</p> <br> 
+		 <a href="landingPage.php" class="btn btn-primary btn-lg active" role="button">Start Exploring!</a>
+
+		</div>
 
 </div>
 
@@ -39,10 +35,3 @@
 </html>
 
 
-
-<script type="text/css">
-	
-
-
-
-</script>
