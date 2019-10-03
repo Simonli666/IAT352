@@ -17,48 +17,32 @@
       })
     </script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
 
-<body>
+  <body>
+    <nav>
+      <div class="brand">
 
-  <!-- hearder -->
-  <header>
-    <div class="container">
-    <div id="branding">
-      <div>
-        <img src="./img/logo.jpg">
-        <!-- title and logo -->
-        <h1><span class="highlight">Movie</span> Web</h1>
+          <h2>Movie</span> Web</h2>
       </div>
-      <nav>
         <ul>
-          <li class="current"><a href="home_page.php">Home</a></li>
-          <li><a href="">Genre</a></li>
+          <li class="current"><a href="landingPage.php">Home</a></li>
           <li><a href="signUp.php">Sign Up</a></li>
           <li><form action="/action_page.php">
             <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <button>Search</button>
           </form>
-        </li>
-        </ul>
+          </li>
+      </ul>
+    </nav>
 
-
-
-      </nav>
-    </div>
-    </div>
-  </header>
-
-
-
-
-
-
-
-
-
-
+    <section>
+      <div class="topCol">
+        <a href="">  <h2>Top Rate Collection</h2><img src="./img/ph.jpg" ></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
+      </div>
+    </section>
 
 
   <div class="sidebar">
