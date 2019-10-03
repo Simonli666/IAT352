@@ -29,6 +29,7 @@ div.title{
 }
 
 </style>
+
 </head>
 <body>
 
@@ -38,35 +39,30 @@ div.title{
 
 <div class="gallery">
   <a target="_blank" href="content.php">
-    <img src="ph.jpg" alt="" width="600" height="400">
+    <img src="filter/img/action1.jpg" alt="" width="600" height="400">
   </a>
   <div class="desc">Add a description of the movie in the future</div>
 </div>
 
 <div class="gallery">
   <a target="_blank" href="content.php">
-    <img src="ph.jpg" alt="" width="600" height="400">
+    <img src="filter/img/action2.jpg" alt="" width="600" height="400">
   </a>
   <div class="desc">Add a description of the movie in the future</div>
 </div>
 <div class="gallery">
   <a target="_blank" href="content.php">
-    <img src="ph.jpg" alt="" width="600" height="400">
+    <img src="filter/img/action3.jpg" alt="" width="600" height="400">
   </a>
   <div class="desc">Add a description of the movie in the future</div>
 </div>
 <div class="gallery">
   <a target="_blank" href="content.php">
-    <img src="ph.jpg" alt="" width="600" height="400">
+    <img src="filter/img/ph.jpg" alt="" width="600" height="400">
   </a>
   <div class="desc">Add a description of the movie in the future</div>
 </div>
-<div class="gallery">
-  <a target="_blank" href="content.php">
-    <img src="ph.jpg" alt="" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the movie in the future</div>
-</div>
+
 
 
 

@@ -5,39 +5,39 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Content Page</title>
 
- <link rel="stylesheet" href="css/content.css">
+<!--  <link rel="stylesheet" href="css/content.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
 
 
-  <body> 
+  <body>
 
     <div class="container-fluid ">
 
-      <div class = "col-md-3"> 
+      <div class = "col-md-3">
 
       </div>
 
-   <div class =" col-md-6" > 
+   <div class =" col-md-6" >
 
-              <div class= "row title">  
+              <div class= "row title">
 
-                <div class = "col-md-12">   
-                  <h1> TITLE: Movie Name 
-                    
+                <div class = "col-md-12">
+                  <h1> TITLE: Movie Name
+
                   </h1> <br>
-          
+
               </div>
 
-                  <!-- <div class = "col-md-4" style="  position:relative; bottom:0; right:0;">   
+                  <!-- <div class = "col-md-4" style="  position:relative; bottom:0; right:0;">
                   <p> rating: 9/10 </p>
 
                   </div> -->
               </div>
 
-              <div class= "row dis">  
+              <div class= "row dis">
 
                  <div class = "col-md-8">    <p> <a href=""> Genre </a>  | Duration:3h   | Year:  1999  </p> </div>
 
@@ -47,14 +47,14 @@
 
 
 
-                <div class = "row images"> 
-                      <div class="col-md-12">  
-                       <img class ="img-responsive" style="width:100%; height:auto;" src="img/ph.jpg" >
+                <div class = "row images">
+                      <div class="col-md-12">
+                       <img class ="img-responsive" style="width:100%; height:auto;" src="filter/img/ph.jpg" >
 
                       </div>
 
-                    <!--   <div class="col-md-4" >  
-                       <img class ="img-responsive" style="width:100%; height:auto;"src="./img/ph.jpg" >  
+                    <!--   <div class="col-md-4" >
+                       <img class ="img-responsive" style="width:100%; height:auto;"src="./img/ph.jpg" >
                         <img class ="img-responsive" style="width:100%; height:auto;" src="./img/ph.jpg" >
 
                       </div> -->
@@ -62,11 +62,11 @@
                 </div>
 
 
-               <div class = "row discription"> 
+               <div class = "row discription">
 
-                 <div class="col-md-9">  
+                 <div class="col-md-9">
 
-            
+
                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Satis est ad hoc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Satis est ad hoc </p>
 
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Satis est ad hoc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Satis est ad hoc </p>
@@ -80,20 +80,20 @@
 
               </div>
 
-               <div class = "row buttons"> 
+               <div class = "row buttons">
 
-          
 
-                    <div class= "col-md-6">  
+
+                    <div class= "col-md-6">
                       <button type="button" class="btn btn-primary">Add to WishList</button>
 
                     </div>
                </div>
 
 
-                <div class = "row storyline"> 
+                <div class = "row storyline">
 
-                    <div class="col-md-12"> 
+                    <div class="col-md-12">
                       <h2> Storyline: </h2>
                       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Satis est ad hoc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Satis est ad hoc omnibus fidibus, ut incontentae sint. Tamen aberramus a proposito, et, ne longius, prorsus, inquam, Piso, si ista mala sunt, placet. Apud imperitos tum illa dicta sunt, aliquid etiam coronae datum; </p>
 
@@ -104,9 +104,9 @@
                 </div>
 
 
-                  <div class="row rating"> 
+                  <div class="row rating">
 
-                    <div class="col-md-12">  
+                    <div class="col-md-12">
                     <h2>  Rating:</h2>
                     <div class="rate">
                       <input type="radio" id="star5" name="rate" value="5" />
@@ -127,35 +127,35 @@
                 </div>
 
 
-                <div class = "row comment"> 
+                <div class = "row comment">
 
-                    <div class ="col-md-12"> 
+                    <div class ="col-md-12">
                       <h4> 12 Comments </h4>
-                       
+
 
 
                     </div>
 
-                  
 
 
-                    <div class ="col-md-12"> 
+
+                    <div class ="col-md-12">
                       <textarea rows="4" cols="93">
 
 
                       </textarea>
-                      
 
-                    </div> 
-                      <div class ="col-md-12" align ="right"> 
-                      <button type="button" class="btn btn-default">Post a Comment</button> 
+
+                    </div>
+                      <div class ="col-md-12" align ="right">
+                      <button type="button" class="btn btn-default">Post a Comment</button>
 
 
                     </div>
 
 
-                    
-                     
+
+
 
 
                 </div>
@@ -170,7 +170,7 @@
 
    </div>
 
-       <div class = "col-md-3"> 
+       <div class = "col-md-3">
 
       </div>
 
@@ -187,3 +187,50 @@
 
 
 
+<style type="text/css">
+
+    *{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.rate {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+/*    left: 0;*/
+  /*  float: left;*/
+   /* height: 46px;*/
+    /*padding: 0 10px;*/
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:45px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+  </style>

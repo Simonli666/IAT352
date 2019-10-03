@@ -38,19 +38,20 @@ div.title{
 
 <div class="gallery">
   <a target="_blank" href="content.php">
-    <img src="ph.jpg" alt="" width="600" height="400">
+    <img src="filter/img/advanture1.jpg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the movie in the future</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="content.php">
+    <img src="filter/img/advanture2.jpg"alt="" width="600" height="400">
   </a>
   <div class="desc">Add a description of the movie in the future</div>
 </div>
 <div class="gallery">
   <a target="_blank" href="content.php">
-    <img src="ph.jpg" alt="" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the movie in the future</div>
-</div>
-<div class="gallery">
-  <a target="_blank" href="content.php">
-    <img src="ph.jpg" alt="" width="600" height="400">
+    <img src="filter/img/advanture3.jpg" alt="" width="600" height="400">
   </a>
   <div class="desc">Add a description of the movie in the future</div>
 </div>
