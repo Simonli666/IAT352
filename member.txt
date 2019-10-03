@@ -1,39 +1,18 @@
-yunbo li,liyunbo11123@gmail.com,y,Horror
-yunbo li,liyunbo11123@gmail.com,,Horror
-yunbo li,liyunbo11123@gmail.com,,Horror
-yunbo li,liyunbo11123@gmail.com,,Horror
-yunbo li,liyunbo11123@gmail.com,,Horror
-ddd@dd,dd@dfdf,d,Horror
-ddd@dd,dd@dfdf,d,Horror
-ddd@dd,dd@dfdf,d,Horror
-ddd@dd,dd@dfdf,d,Horror
-ddd@dd,dd@dfdf,d,Horror
-yunbo li,liyunbo11123@gmail.com,s,Action
-yunbo li,liyunbo11123@gmail.com,s,Action
-yunbo li,liyunbo11123@gmail.com,s,Action
-yunbo li,liyunbo11123@gmail.com,,Horror
-yunbo li,liyunbo11123@gmail.com,sssss,Horror
-yunbo li,liyunbo11123@gmail.com,sssss,Horror
-yunbo li,liyunbo11123@gmail.com,sssss,Horror
-yunbo li,liyunbo11123@gmail.com,sssss,Horror
-yunbo li,liyunbo11123@gmail.com,sssss,Horror
-,,,
-,,,Horror
-,,d,Horror
-,,,Other
-,,,Other
-,,,
-,,,
-,,,Horror
-,,,Horror
-,,,Horror
-,,,Horror
-,,,Horror
-,,,Horror
-,,,
-,,fff,Horror
-,,fff,Horror
+
 yunbo li,liyunbo11123@gmail.com,fff,Horror
 yunbo li,liyunbo11123@gmail.com,fff,Horror
-yunbo li,liyunbo11123@gmail.com,,Horror
-,,fff,Horror
+yunbo li,liyunbo11123@gmail.com,fff,Horror
+yunbo li,liyunbo11123@gmail.com,fff,Horror
+yunbo li,liyunbo11123@gmail.com,xhybzs1966,Horror
+yunbo li,liyunbo11123@gmail.com,xhybzs1966,Drama
+yunbo li,liyunbo11123@gmail.com,ss,Horror
+yunbo li,liyunbo11123@gmail.com,ss,Horror
+yunbo li,liyunbo11123@gmail.com,ss,Horror
+yunbo li,liyunbo11123@gmail.com,ss,Horror
+yunbo li,liyunbo11123@gmail.com,ss,Horror
+yunbo li,liyunbo11123@gmail.com,ss,Horror
+yunbo li,liyunbo11123@gmail.com,ss,Horror
+,,,Horror
+yunbo li,liyunbo11123@gmail.com,ss,Horror
+Name: yunbo li,Email: liyunbo11123@gmail.com,Password: ss,Interest: Horror
+Name:yunbo li, Email:liyunbo11123@gmail.com, Password:s, Interest:Horror

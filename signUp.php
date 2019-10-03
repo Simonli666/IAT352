@@ -1,121 +1,5 @@
 
-
-
-<html lang="en">
-	<head>
-		<title>Landing Page</title>
-		   <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
-	</head>
-	<body>
-
-			<div class="form-style-5">
-	<form action="signUp.php" method="post">
-		<fieldset>
-			<legend><span class="number"> Sign Up</legend>
-				<input type="text" name="name"  placeholder="Your Name *"  value="<?php  $name;?>" >
-
-				<input type="email" name="email" placeholder="Your Email *" value="<?php  $email;?>">
-				<input type="text" name="password" placeholder="Create a Password *" value="<?php  $password;?>">
-				<input type="text" name="RepassWord" placeholder="Re-Enter the passward *" value="<?php  $RepassWord;?>">
-				
-
-					<label for="job">Interests:</label>
-				<select id="" name="interest">
-
-				
-				  <option value="Horror">Horror</option>
-				  <option value="Action">Action</option>
-				  <option value="Drama">Drama</option>
-				  <option value="Fantacy">Fantacy</option>
-				  <option value="International">International</option>
-				  <option value="Other">Other</option>
-
-				</select>   
-
-				</fieldset>
-
-				<input type="submit" name="submit" value="Submit" />
-				</form>
-				</div>
-
-<!-- check  if variables are empty-->
-<?php
-
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-	// define variables and set to empty values
-$name = $email = $password = $ReEnterPassword = "";
-
-$name = $_POST["name"];
-$email = $_POST["email"];
-$password = $_POST["password"];
-$ReEnterPassword = $_POST["RepassWord"];
-$interest = $_POST["interest"];
-
-$file = 'member.txt';
-// Open connection to the $file in writing mode
-
-
-// check form valid
-	if ($password != $ReEnterPassword) {
-	echo "Passwords are not identical!!";
-	} 
-	
- 	if ($name == "" || $email == "" || $password == "" || $interest =="")  {
-
-		echo "*Please Fill in the form!!";
-
-	}
-
-
-	if($handle = fopen($file, 'a+')) { 	
-
-		
-	// Write string to the file
-	// the function returns the number of bytes interted or false
-	fwrite($handle, "$name,$email,$password,$interest\n");
-
-	// echo "$name,$email,$password,$interest\n";
-
-	fclose($handle);
-} else {
-	echo "Could not open file for writing.";
-}
-
-	
-	
-
-}
-
-
-
-?>
-
-
-<!-- read form  -->
-<?php	
-
-		// $name = (!empty($_POST['name']) ? $_POST['name'] : "");
-		// $email = (!empty($_POST['email']) ? $_POST['email'] : "");
-		// $password = (!empty($_POST['password']) ? $_POST['password'] : "");
-		// $ReEnterPassword = (!empty($_POST['RepassWord']) ? $_POST['RepassWord'] : "");
-		// $interest = (!empty($_POST['interest']) ? $_POST['interest'] : "");
-
-		
-		
-	
-?>
-
-
-
-
-
-	</body>
-
-
-	<style type="text/css">
+<style type="text/css">
 		.form-style-5{
 			max-width: 500px;
 			padding: 10px 20px;
@@ -144,7 +28,7 @@ $file = 'member.txt';
 			.form-style-5 input[type="number"],
 			.form-style-5 input[type="search"],
 			.form-style-5 input[type="time"],
-			.form-style-5 input[type="url"],
+			.form-style-5 input[type="password"],
 			.form-style-5 textarea,
 			.form-style-5 select {
 			font-family: Georgia, "Times New Roman", Times, serif;
@@ -172,7 +56,7 @@ $file = 'member.txt';
 			.form-style-5 input[type="number"]:focus,
 			.form-style-5 input[type="search"]:focus,
 			.form-style-5 input[type="time"]:focus,
-			.form-style-5 input[type="url"]:focus,
+			.form-style-5 input[type="password"]:focus,
 			.form-style-5 textarea:focus,
 			.form-style-5 select:focus{
 				background: #d2d9dd;
@@ -220,6 +104,102 @@ $file = 'member.txt';
 			}
 
 </style>
+
+<html lang="en">
+	<head>
+		<title>Landing Page</title>
+		   <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+	</head>
+	<body>
+
+			<div class="form-style-5">
+	<form action="signUp.php" method="post">
+		<fieldset>
+			<legend><span class="number"> Sign Up</legend>
+				<input type="text" name="name"  placeholder="Your Name *"  value="<?php  $name;?>" >
+
+				<input type="email" name="email" placeholder="Your Email *" value="<?php  $email;?>">
+				<input type="password" name="password" placeholder="Create a Password *" value="<?php  $password;?>">
+				<input type="password" name="RepassWord" placeholder="Re-Enter the passward *" value="<?php  $RepassWord;?>">
+				
+
+					<label for="job">Interests:</label>
+				<select id="" name="interest">
+
+				
+				  <option value="Horror">Horror</option>
+				  <option value="Action">Action</option>
+				  <option value="Drama">Drama</option>
+				  <option value="Fantacy">Fantacy</option>
+				  <option value="International">International</option>
+				  <option value="Other">Other</option>
+
+				</select>   
+
+				</fieldset>
+
+				<input type="submit" name="submit" value="Submit" />
+				</form>
+				</div>
+
+<!-- check  if variables are empty-->
+<?php
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+	// define variables and set to empty values
+$name = $email = $password = $ReEnterPassword = "";
+
+$name = $_POST["name"];
+$email = $_POST["email"];
+$password = $_POST["password"];
+$ReEnterPassword = $_POST["RepassWord"];
+$interest = $_POST["interest"];
+
+$file = 'member.txt';
+// Open connection to the $file in writing mode
+
+	// check form valid
+	if ($password != $ReEnterPassword) {
+			// echo "*Passwords are not identical!!";
+			exit("*Passwords are not identical!!"); 
+	} 
+
+ 	if ($name == "" || $email == "" || $password == "" || $interest =="")  {
+
+		// echo "*Please Fill in the form!!";
+		
+		exit("*Please Fill in the form!!"); 
+
+	} 
+	else if($handle = fopen($file, 'a+')) { 	
+
+		
+	// Write string to the file
+	// the function returns the number of bytes interted or false
+	fwrite($handle, "Name:$name, Email:$email, Password:$password, Interest:$interest\n");
+
+	// echo "Welcome Our New Member!\n";
+
+	header("Location:welcome.php");
+    exit; 
+
+	fclose($handle);
+	} else {
+	echo "Could not open file for writing.";
+	}
+
+}
+
+
+
+?>
+
+
+	</body>
+
 
 
 </html>
