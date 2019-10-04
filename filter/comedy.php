@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<!-- style/design part -->
 <style>
 div.gallery {
   margin: 5px;
@@ -21,6 +21,7 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  color: #fff;
 }
 
 div.title{
@@ -29,45 +30,40 @@ div.title{
 }
 
 </style>
-</head>
+
 <body>
-
-<div class="title">
-  <h2>Comedy Movie</h2>
-</div>
-
-<div class="gallery">
-<a target="_blank" href="content.php">
-    <img src="ph.jpg" alt="" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the movie in the future</div>
-</div>
-<div class="gallery">
-  <a target="_blank" href="content.php">
-    <img src="ph.jpg" alt="" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the movie in the future</div>
-</div>
-<div class="gallery">
-  <a target="_blank" href="content.php">
-    <img src="ph.jpg" alt="" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the movie in the future</div>
-</div>
-<div class="gallery">
-  <a target="_blank" href="content.php">
-    <img src="ph.jpg" alt="" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the movie in the future</div>
-</div>
-<div class="gallery">
-  <a target="_blank" href="content.php">
-    <img src="ph.jpg" alt="" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the movie in the future</div>
-</div>
+  <!-- add the title for the comedy movie page -->
+  <div class="title">
+    <h2>Comedy Movie</h2>
+  </div>
 
 
+  <!-- show all comedy movies -->
+  <div class="gallery">
+    <!-- allow user click each movie to see a specific information -->
+    <a target="_blank" href="content.php">
+      <img src="filter/img/comedy1.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the movie in the future</div>
+  </div>
 
+
+  <!-- same as the above part -->
+  <div class="gallery">
+    <a target="_blank" href="content.php">
+      <img src="filter/img/comedy2.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the movie in the future</div>
+  </div>
+
+
+  <div class="gallery">
+    <a target="_blank" href="content.php">
+      <img src="filter/img/comedy3.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the movie in the future</div>
+  </div>
+
+  
 </body>
 </html>

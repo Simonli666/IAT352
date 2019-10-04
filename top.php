@@ -1,28 +1,35 @@
 
-<style type="text/css">
-
-	.topCol {
-		position: relative;
-		top: 0;
-		width: 100%;
-	  height: auto;
-	}
-
-	.topCol a img {
-		position: relative;
-		top: 0;
-		width: 100%;
-		height: auto;
-	}
 
 
-
-
-</style>
-
-<section>
+<!-- add the title and image for the home page -->
   <div class="topCol">
-    <a href="top.php?page = drama">  <h2>Top Rate Collection</h2><img src="filter/img/main.jpg" ></a>
-  
+		<h2>Top Rate Collections</h2>
+    <img src="filter/img/main.jpg" >
   </div>
-</section>
+
+<!-- design part  -->
+	<style type="text/css">
+
+
+		.topCol {
+			position: relative;
+		  top: 0;
+			padding-left: 0;
+		  background: #575757;
+		  transition: .3s;
+		  overflow: hidden;
+		}
+
+		.topCol  img {
+			position: relative;
+			margin: 0;
+			top: 0;
+			width: 100%;
+			height: auto;
+		}
+
+		.topCol h2 {
+			text-align: center;
+			color: #fff;
+		}
+	</style>s

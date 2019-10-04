@@ -4,15 +4,32 @@
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Content Page</title>
-
-<!--  <link rel="stylesheet" href="css/content.css"> -->
+    <!-- import bootstrap library -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
 
-
+<!-- main body -->
   <body>
+
+    <!-- add the navgtion bar into the content page-->
+    <nav>
+      <div class = "brand">
+          <h2>Movie</span> Web</h2>
+      </div>
+        <ul>
+          <li class="current"> <a href="landingPage.php">Home</a> </li>
+          <li><a href="signUp.php">Sign Up</a></li>
+          <li><form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button>Search</button>
+          </form>
+          </li>
+        </ul>
+
+
+    </nav>
 
     <div class="container-fluid ">
 
@@ -220,11 +237,11 @@
     content: '★ ';
 }
 .rate > input:checked ~ label {
-    color: #ffc700;    
+    color: #ffc700;
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
+    color: #deb217;
 }
 .rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
@@ -233,4 +250,67 @@
 .rate > label:hover ~ input:checked ~ label {
     color: #c59b08;
 }
+
+nav
+{
+ position:relative;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 70px;
+ background: black;
+ padding: 0 100px;
+ box-sizing: border-box;
+}
+
+nav .brand{
+ float: left;
+ height: 100%;
+ line-height: 70px;
+}
+
+nav .brand h2
+{
+ margin-top: 20px;
+ padding: 0;
+ color: #fff;
+}
+
+nav  ul{
+ float: right;
+ display: flex;
+ margin: 0;
+ padding: 0;
+}
+
+
+nav  li{
+ list-style: none;
+}
+
+nav ul li a
+{
+ position: relative;
+ display:block;
+ height: 70px;
+ line-height: 70px;
+ padding: 0 20px;
+ box-sizing: border-box;
+ color: #fff;
+ text-decoration: none;
+ text-transform: uppercase;
+ transition: .5s;
+}
+
+nav ul li a:hover{
+ color: #262626;
+}
+
+nav form{
+ margin-top: 20px;
+ height: 20px;
+ line-height: 20px;
+}
+
+
   </style>

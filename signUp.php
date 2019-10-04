@@ -40,9 +40,9 @@
 				outline: 0;
 				padding: 10px;
 				width: 100%;
-				box-sizing: border-box; 
+				box-sizing: border-box;
 				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box; 
+				-moz-box-sizing: border-box;
 				background-color: #e8eeef;
 				color:#8a97a0;
 				-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -93,14 +93,20 @@
 				text-align: center;
 				font-style: normal;
 				width: 100%;
-				border: 1px solid #16a085;
-				border-width: 1px 1px 3px;
+				/* border: 1px solid #16a085;
+				border-width: 1px 1px 3px; */
 				margin-bottom: 10px;
 			}
 			.form-style-5 input[type="submit"]:hover,
 			.form-style-5 input[type="button"]:hover
 			{
-				background: #109177;
+				background: #A2A2A2;
+			}
+
+			.form-style-5 input[type="submit"]
+
+			{
+				background: #262626;
 			}
 
 </style>
@@ -110,7 +116,7 @@
 		<title>Landing Page</title>
 		   <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
+
 	</head>
 	<body>
 
@@ -123,12 +129,12 @@
 				<input type="email" name="email" placeholder="Your Email *" value="<?php  $email;?>">
 				<input type="password" name="password" placeholder="Create a Password *" value="<?php  $password;?>">
 				<input type="password" name="RepassWord" placeholder="Re-Enter the passward *" value="<?php  $RepassWord;?>">
-				
+
 
 					<label for="job">Interests:</label>
 				<select id="" name="interest">
 
-				
+
 				  <option value="Horror">Horror</option>
 				  <option value="Action">Action</option>
 				  <option value="Drama">Drama</option>
@@ -136,7 +142,7 @@
 				  <option value="International">International</option>
 				  <option value="Other">Other</option>
 
-				</select>   
+				</select>
 
 				</fieldset>
 
@@ -164,19 +170,19 @@ $file = 'member.txt';
 	// check form valid
 	if ($password != $ReEnterPassword) {
 			// echo "*Passwords are not identical!!";
-			exit("*Passwords are not identical!!"); 
-	} 
+			exit("*Passwords are not identical!!");
+	}
 
  	if ($name == "" || $email == "" || $password == "" || $interest =="")  {
 
 		// echo "*Please Fill in the form!!";
-		
-		exit("*Please Fill in the form!!"); 
 
-	} 
-	else if($handle = fopen($file, 'a+')) { 	
+		exit("*Please Fill in the form!!");
 
-		
+	}
+	else if($handle = fopen($file, 'a+')) {
+
+
 	// Write string to the file
 	// the function returns the number of bytes interted or false
 	fwrite($handle, "Name:$name, Email:$email, Password:$password, Interest:$interest\n");
@@ -184,7 +190,7 @@ $file = 'member.txt';
 	// echo "Welcome Our New Member!\n";
 
 	header("Location:welcome.php");
-    exit; 
+    exit;
 
 	fclose($handle);
 	} else {

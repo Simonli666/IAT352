@@ -3,149 +3,116 @@
   <head>
     <meta charset="utf-8">
     <title> Movie Web</title>
+    <!-- for further development -->
  <!--    <script src="https://code.jquery.com/jquery-3.4.1.js">
   </script -->
-
-
+  <!-- import bootstrap library -->
+  <!-- reference from: https://getbootstrap.com/docs/4.3/getting-started/introduction/-->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- for further design developmet -->
+
   <!--   <script type= "text/javascript">
       $(document).ready(function(){
         $('.sidebarBtn').click(function(){
           $('.sidebar').toggleClass('active');
           $('.sidebarBtn').toggleClass('toggle');
-
-
         })
-
       })
     </script> -->
 
-  <!--   <link rel="stylesheet" href="filter/css/style.css"> -->
   </head>
-
   <body>
-
      <div class="container-fluid">
-
       <div class="row">
-
           <!-- <div class="col-md-12"> -->
               <div>
+                <!-- navigation bar -->
             <nav>
               <div class = "brand">
-
+                <!-- website name -->
                   <h2>Movie</span> Web</h2>
-
                    </div>
-
+                   <!-- navigation list -->
                 <ul>
                   <li class="current"> <a href="landingPage.php">Home</a> </li>
                   <li><a href="signUp.php">Sign Up</a></li>
+                  <!-- add the search functionality -->
                   <li><form action="/action_page.php">
                     <input type="text" placeholder="Search.." name="search">
                     <button>Search</button>
                   </form>
                   </li>
                 </ul>
-
-
             </nav>
           </div>
       </div>
 
 
-
-
-
+    <!-- create the filter for the website -->
     <div class="row">
-
-        <!-- <div class="col-md-12" align="center"> -->
-        <div>
-
-     <?php include('top.php'); ?>
-       </div>
-
-
-   </div>
-
-    <div class="row">
-
-        <div class="sidebar col-md-3">
+        <div class="sidebar col-md-2">
           <ul>
             <li><a href="?page=comedy">Comedy</a></li>
-            <li><a href="?page=horror ">horror</a></li>
-            <li><a href="?page=romance">romance</a></li>
-            <li><a href="?page=drama">drama</a></li>
-            <li><a href="?page=fiction">fiction</a></li>
-            <li><a href="?page=action">action</a></li>
-            <li><a href="?page=documentary">documentary</a></li>
-            <li><a href="?page=advanture">advanture</a></li>
+            <li><a href="?page=horror ">Horror</a></li>
+            <li><a href="?page=romance">Romance</a></li>
+            <li><a href="?page=drama">Drama</a></li>
+            <li><a href="?page=fiction">Fiction</a></li>
+            <li><a href="?page=action">Action</a></li>
+            <li><a href="?page=documentary">Documentary</a></li>
+            <li><a href="?page=advanture">Advanture</a></li>
           </ul>
-
-         <!--  <button class="sidebarBtn">
-            <span></span>
-          </button> -->
-
-
         </div>
 
 
 
-
-
-
-      <div class = "col-md-9">
-
-
+      <div class = "col-md-10" >
+        <!--if the user click different genre of movies, a list of movie will be shown.
+        else, the website will show the top rate collection in home page
+       -->
         <?php
-
-         // include('top.php');
-
         if(isset($_GET['page'])){
           $page = $_GET['page'];
           $display = $page.'.php';
           include('filter/'.$display);
-
+        } else {
+          include('top.php');
         }
        ?>
-
      </div>
    </div>
-
-
-
  </div>
-
-
 </body>
-
-
-
-
 </html>
 
 
 
+<!-- design part -->
 <style type ="text/css">
 
+/* make the margin and padding all equal 0 and set the font type and bg color */
 body
 {
   margin: 0;
   padding: 0;
   font-family: verdana;
-  background: #ffffff;
-  /*overflow: hidden;*/
+  background: #262626;
 }
 
+/* set the text color and padding size */
+body h2{
+  color: #fff;
+  padding-left: 1vh;
+}
+
+/* the style of the filter */
 .sidebar
 {
-
-  background: #696969;
-  width: 250px;
-  height: 100%;
-  transition: .3s;
+  position: relative;
+  top: 0;
+  background: black;
+    height: 100vh;
 }
 
 .active
@@ -164,16 +131,28 @@ body
   list-style: none;
 }
 
+.sidebar ul li:hover{
+  background-color: #262626;
+}
+
+.sidebar ul li:active{
+  background-color: #262626;
+}
+
+.sidebar ul li:focus{
+    background-color: #262626;
+}
+
+
 .sidebar ul li a
 {
-  padding: 10px 20px;
+  padding: 20px 10px 20px 10px;
+  font-size: 16px;
   color: #fff;
   display: block;
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-
-
 
 .sidebar ul li a:hover{
   color:#8890C6;
@@ -181,7 +160,7 @@ body
 }
 
 
-
+/* this part is for future design developmet */
 /*.sidebarBtn
 {
   position: absolute;
@@ -251,7 +230,8 @@ body
   transform: rotate(-45deg);
 }*/
 
-  /* header */
+/* the design style of navigation bar */
+
  nav
 {
   position:relative;
@@ -313,6 +293,7 @@ nav form{
   line-height: 20px;
 }
 
+/* this part is for future design developmet */
 /* nav ul li a:before
 {
   content: '';
@@ -343,5 +324,20 @@ nav form{
 nav form:hover{
   color: #262626;
 } */
+/*
+div.gallery {
+
+  padding: 10px 20px 10px 20px;
+} */
+
+
+/* basic setting of the content page */
+/* let the content page show each movie with a border */
+div.gallery {
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  margin: 20px;
+}
 
   </style>

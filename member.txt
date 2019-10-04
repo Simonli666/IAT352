@@ -19,3 +19,5 @@ Name:yunbo li, Email:liyunbo11123@gmail.com, Password:s, Interest:Horror
 Name:yunbo li, Email:liyunbo11123@gmail.com, Password:sss, Interest:Horror
 Name:yunbo li, Email:liyunbo11123@gmail.com, Password:s, Interest:Horror
 Name:yunbo li, Email:liyunbo11123@gmail.com, Password:vv, Interest:Horror
+Name:Zhang Qinghe, Email:wtingw@qq.com, Password:ss, Interest:Horror
+Name:Zhang Qinghe, Email:wtingw@qq.com, Password:11, Interest:Horror
